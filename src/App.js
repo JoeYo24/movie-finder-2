@@ -11,9 +11,9 @@ const NotFound = () => {
 
 const App = () => {
   return (
-    <Router>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/">Movie Finder</Link>
+    <Router basename="/movie-finder-2">
+      <nav className="navbar navbar-light bg-light">
+        <Link className="navbar-brand ms-2" to="/">Movie Finder</Link>
       </nav>
       <Switch>
         <Route path="/" exact component={Home} />

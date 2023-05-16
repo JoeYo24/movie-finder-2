@@ -15,7 +15,7 @@ const Movie = (props) => {
     <div className="row">
       <div className="col-4 col-md-2 col-lg-1 mb-3">
         <Link to={`/movie/${imdbID}/`}>
-          <img src={Poster} className="img-fluid" />
+          <img src={Poster} alt='describe' className="img-fluid" />
         </Link>
       </div>
       <div className="col-8 col-md-10 col-lg-11 mb-3">
@@ -79,15 +79,15 @@ class MovieFinder extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <form onSubmit={this.handleSubmit} className="form-inline my-4">
+            <form onSubmit={this.handleSubmit} className="my-4">
               <input
                 type="text"
-                className="form-control me-sm-2 me-auto"
+                className="form-control me-sm-2 me-auto w-75 d-inline-flex"
                 placeholder="frozen"
                 value={searchTerm}
                 onChange={this.handleChange}
               />
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary my-4">Submit</button>
             </form>
             {(() => {
               if (error) {
