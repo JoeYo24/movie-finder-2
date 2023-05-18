@@ -79,7 +79,7 @@ class MovieFinder extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <form onSubmit={this.handleSubmit} className="my-4">
+            <form onSubmit={this.handleSubmit} className="form-inline my-4">
               <input
                 type="text"
                 className="form-control me-sm-2 me-auto w-75 d-inline-flex"
